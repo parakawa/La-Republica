@@ -9,3 +9,24 @@ mixin columnist(date,title,img,alt,name,desc)
 				.desc
 					p.f-700=name
 					h5.f-700.gray=desc
+mixin row-columnist()
+	+columnist(
+		'Lima, viernes 31 de marzo del 2016',
+		'El gol del triunfo',
+		'img_author_columnista.jpg',
+		'columnistas',
+		'Augusto Álvaro Rodrich',
+		'Claro y directo')
+	+columnist(
+		'Lima, viernes 31 de marzo del 2016',
+		'¿Cuál es tu queso favorito?',
+		'blog_avatar_01.jpg',
+		'columnistas',
+		'Mirko Lauer',
+		'Observador')
+	+columnist('Lima, viernes 31 de marzo del 2016',
+		'El gol del triunfo',
+		'img_author_columnista.jpg',
+		'columnistas',
+		'Augusto Álvaro Rodrich',
+		'Claro y directo')
