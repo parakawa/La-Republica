@@ -42,12 +42,21 @@ body{
 	.view-column{
 		border: 2px solid gray; 
 		padding: 35px 10px 10px 10px;
-		
 	}
-
 	.columnist{
 		padding: 10px;
 		background-color: $bg-gray;
+	}
+
+	.col-5{
+		float: left;
+		width: 33.3333%;
+		padding: 0 14px;
+		@media (max-width: 768px)
+		{
+			width: 100%;
+			margin-bottom: 14px;
+		}
 	}
 	img{
 		border: 2px solid white;
@@ -60,8 +69,6 @@ body{
 		display: inline-block;
 		padding: 5px 0 0 14px;
 		width: 70%;
-		
-
 	}
 
 	h1,h2,h3,h4,h6{

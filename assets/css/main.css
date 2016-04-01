@@ -28,6 +28,14 @@ body {
 #columnistas .columnist {
   padding: 10px;
   background-color: #E2E6E9; }
+#columnistas .col-5 {
+  float: left;
+  width: 33.3333%;
+  padding: 0 14px; }
+  @media (max-width: 768px) {
+    #columnistas .col-5 {
+      width: 100%;
+      margin-bottom: 14px; } }
 #columnistas img {
   border: 2px solid white; }
 #columnistas .img-col {

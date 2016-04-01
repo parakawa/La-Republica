@@ -1,0 +1,11 @@
+mixin columnist(date,title,img,alt,name,desc)
+	.col-5
+		.view-column
+			p.text-center=date
+			h4.text-center=title
+			.columnist
+				.img-col
+					img(src="assets/image/"+img,alt=alt)
+				.desc
+					p.f-700=name
+					h5.f-700.gray=desc
