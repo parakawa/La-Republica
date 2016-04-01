@@ -1,7 +1,9 @@
+mixin img(name,alt)
+	img(src="assets/image/"+name,alt=alt)
 mixin columnist(img,alt,name,desc)
 	.columnist
 		.img-col
-			img(src="assets/image/"+img,alt=alt)
+			+img(img,alt)
 		.desc
 			p.f-700=name
 			h5.f-700.gray=desc

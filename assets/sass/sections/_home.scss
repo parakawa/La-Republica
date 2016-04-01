@@ -1,0 +1,21 @@
+/*****TITULARES*****/
+.titulares{
+    display: block;
+    border: 1px solid #CDCDCD;
+    margin-bottom: 30px;
+ 	.shadow{
+ 		position:absolute;
+ 		left:11px;
+ 		bottom:75px;
+ 		width:90%;
+ 		height:20%;
+ 		background: linear-gradient(to bottom, transparent 0%, black 50%);
+		h5{
+			color:white;
+			left:0;
+			position:absolute;
+			bottom:0;
+		}
+ 	}
+}
+ 
