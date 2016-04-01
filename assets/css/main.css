@@ -4,6 +4,9 @@ body {
 .mb-2 {
   margin-bottom: 2%; }
 
+.pd-1 {
+  padding: 1%; }
+
 .f-300 {
   font-weight: 300; }
 
@@ -43,7 +46,7 @@ body {
   width: 20%; }
 #columnistas .desc {
   display: inline-block;
-  padding: 5px 0 0 14px;
+  padding: 5px 0 0 21px;
   width: 70%; }
 #columnistas h1, #columnistas h2, #columnistas h3, #columnistas h4, #columnistas h6 {
   font-weight: 700; }
@@ -60,5 +63,28 @@ body {
   #columnistas h5 .fa-angle-double-down {
     font-size: 1.3em;
     margin-left: 5px; }
+#columnistas .todas {
+  display: block;
+  width: 100%;
+  background: #C00101;
+  border: 1px solid #C00101;
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 3px;
+  max-width: 200px; }
+#columnistas .menu-alfabetico {
+  background-color: #C00101;
+  padding: 20px 50px 10px; }
+  #columnistas .menu-alfabetico li {
+    display: inline-block; }
+    #columnistas .menu-alfabetico li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      padding: 7px 18px; }
 
 /*# sourceMappingURL=main.css.map */
