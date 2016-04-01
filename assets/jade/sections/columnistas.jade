@@ -1,1 +1,54 @@
-h1 holi
+include ../helpers/variables
+include ../helpers/mixins
+doctype html
+html(lang="es")
+	head
+		title Columnistas
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel="icon" href="assets/image/favicon.ico" type="image/x-icon")
+		link(rel="stylesheet", href="assets/css/dist/font-awesome.min.css")
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', type='text/css')
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', type='text/css')
+		link(rel="stylesheet", href="assets/css/dist/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/css/main.css")
+	body
+		include ../base/header
+		section#columnistas
+			.container
+				h1.f-700 Columnistas
+				h5.gray.f-300.mb-2 LO ÚLTIMO EN COLUMNISTAS
+					i.fa.fa-angle-double-down.red
+				.row
+					.col-sm-5
+						.view-column
+							p.text-center Lima, viernes 31 de marzo del 2016
+							h4.text-center El gol del triunfo
+							.columnist
+								.img-col
+									img(src="assets/image/img_author_columnista.jpg",alt="columnistas")
+								.desc
+									p.f-700 Augusto Álvaro Rodrich
+									h5.f-700.gray Claro y directo
+					.col-sm-5
+						.view-column
+							p.text-center Lima, viernes 31 de marzo del 2016
+							h4.text-center El gol del triunfo
+							.columnist
+								.img-col
+									img(src="assets/image/img_author_columnista.jpg",alt="columnistas")
+								.desc
+									p.f-700 Augusto Álvaro Rodrich
+									h5.f-700.gray Claro y directo
+					.col-sm-5
+						.view-column
+							p.text-center Lima, viernes 31 de marzo del 2016
+							h4.text-center El gol del triunfo
+							.columnist
+								.img-col
+									img(src="assets/image/img_author_columnista.jpg",alt="columnistas")
+								.desc
+									p.f-700 Augusto Álvaro Rodrich
+									h5.f-700.gray Claro y directo
+
+		include ../base/footer
