@@ -4,5 +4,7 @@ section#slider
 			.col-sm-offset-2.col-sm-12.bg-gray
 				.title.text-center
 					span COLUMNISTAS
-				.columnistas.text-center
+				.slider-col(data-slick='{"slidesToShow": 6, "slidesToScroll": 6}')
+					+columnistas()
+					+columnistas()
 					+columnistas()

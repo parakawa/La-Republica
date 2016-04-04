@@ -113,32 +113,32 @@ body {
 .row div img {
   max-width: 100%; }
 
-#ultimas-noticias .aweita {
+#ultimas-noticias .aweita, #ultimas-noticias .fotos-destacadas {
   padding: 20px 10px;
   margin-top: 20px;
   border: solid #ccc 1px; }
-  #ultimas-noticias .aweita .img-aweita {
+  #ultimas-noticias .aweita .img-aweita, #ultimas-noticias .fotos-destacadas .img-aweita {
     margin-bottom: 20px; }
-  #ultimas-noticias .aweita a {
+  #ultimas-noticias .aweita a, #ultimas-noticias .fotos-destacadas a {
     color: black; }
-  #ultimas-noticias .aweita .aweita-item {
+  #ultimas-noticias .aweita .aweita-item, #ultimas-noticias .fotos-destacadas .aweita-item {
     padding-bottom: 20px; }
-    #ultimas-noticias .aweita .aweita-item h6 {
+    #ultimas-noticias .aweita .aweita-item h6, #ultimas-noticias .fotos-destacadas .aweita-item h6 {
       display: table-cell;
       vertical-align: middle;
       width: 160px;
       height: 57px;
       padding-left: 12px; }
-    #ultimas-noticias .aweita .aweita-item .img-item {
+    #ultimas-noticias .aweita .aweita-item .img-item, #ultimas-noticias .fotos-destacadas .aweita-item .img-item {
       display: table-cell;
       vertical-align: middle; }
-  #ultimas-noticias .aweita p {
+  #ultimas-noticias .aweita p, #ultimas-noticias .fotos-destacadas p {
     height: 16px;
     margin: 8px 20px 0px 20px;
     text-align: center; }
-    #ultimas-noticias .aweita p a {
+    #ultimas-noticias .aweita p a, #ultimas-noticias .fotos-destacadas p a {
       color: #C00101; }
-    #ultimas-noticias .aweita p span {
+    #ultimas-noticias .aweita p span, #ultimas-noticias .fotos-destacadas p span {
       display: inline-block;
       padding-bottom: 10px;
       border-bottom: solid #C00101 5px; }
@@ -186,6 +186,26 @@ body {
     text-align: center; }
   #ultimas-noticias .encuesta .btn-submit {
     border-radius: 4px; }
+#ultimas-noticias .fotos-destacadas {
+  border: none;
+  border-bottom: 1px solid #CDCDCD;
+  margin: 0 0 20px 20px;
+  margin: 30px 0 20px; }
+  #ultimas-noticias .fotos-destacadas .title {
+    border-top: 4px solid #768696;
+    position: relative; }
+    #ultimas-noticias .fotos-destacadas .title span {
+      display: inline-block;
+      padding: 6px 10px;
+      line-height: 1;
+      background-color: #768696;
+      color: white;
+      position: relative;
+      top: -10px; }
+  #ultimas-noticias .fotos-destacadas h4 {
+    margin: 15px 0; }
+  #ultimas-noticias .fotos-destacadas h6 {
+    font-weight: 700; }
 
 #slider {
   padding: 20px 0; }
@@ -200,11 +220,13 @@ body {
       position: relative;
       z-index: 100; }
   #slider .slick {
-    margin: 40px 2px 20px 2px;
+    margin: 40px 2px 5px 0px;
     display: inline-block;
     position: relative; }
     #slider .slick h5 {
       font-size: 0.8em; }
+    #slider .slick img {
+      margin: 0 auto; }
     #slider .slick .border {
       border: 5px solid white; }
   #slider .columnistas {
