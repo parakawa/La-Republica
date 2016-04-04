@@ -72,7 +72,7 @@
  	.encuesta{
  		  background: url("../image/trama_square.jpg") repeat left top;
 		  padding: 2.5em 0.5em 0.8em 0.5em;
-		  margin: 0 0 30px;
+		  margin: 20px 0 30px;
  		.pregunta{
  			background: #FFF;
   			padding: 1em 12px;
@@ -101,6 +101,32 @@
 			  margin-top: 4%;
 			  border: none;
  		}
+		.progress-bar-lleno{
+			background: #dddddd url("../image/barprogress_bg.jpg") repeat-x;
+  			width: 100%;
+  			margin:10px 0;
+  			.progress-bar-yes{
+  				background-color: #CDF3A6;
+				padding: 1%;
+				width: 40%;
+  			}
+  			.progress-bar-no{
+  				background-color: #F0A3A3;
+				padding: 1%;
+				width: 60%;
+  			}
+		}
+		.more{
+			display: block;
+			font-weight: 300;
+			margin: 0.5em 0 0;
+			text-align: center;
+		}
+
+		.btn-submit{
+			border-radius: 4px;
+		}
+
 
  	}
 }

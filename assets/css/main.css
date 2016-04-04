@@ -145,7 +145,7 @@ body {
 #ultimas-noticias .encuesta {
   background: url("../image/trama_square.jpg") repeat left top;
   padding: 2.5em 0.5em 0.8em 0.5em;
-  margin: 0 0 30px; }
+  margin: 20px 0 30px; }
   #ultimas-noticias .encuesta .pregunta {
     background: #FFF;
     padding: 1em 12px; }
@@ -167,6 +167,25 @@ body {
     font-weight: bolder;
     margin-top: 4%;
     border: none; }
+  #ultimas-noticias .encuesta .progress-bar-lleno {
+    background: #dddddd url("../image/barprogress_bg.jpg") repeat-x;
+    width: 100%;
+    margin: 10px 0; }
+    #ultimas-noticias .encuesta .progress-bar-lleno .progress-bar-yes {
+      background-color: #CDF3A6;
+      padding: 1%;
+      width: 40%; }
+    #ultimas-noticias .encuesta .progress-bar-lleno .progress-bar-no {
+      background-color: #F0A3A3;
+      padding: 1%;
+      width: 60%; }
+  #ultimas-noticias .encuesta .more {
+    display: block;
+    font-weight: 300;
+    margin: 0.5em 0 0;
+    text-align: center; }
+  #ultimas-noticias .encuesta .btn-submit {
+    border-radius: 4px; }
 
 #slider {
   padding: 20px 0; }

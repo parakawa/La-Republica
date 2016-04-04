@@ -13,26 +13,48 @@ section#ultimas-noticias
 						input(type="text",class="text-control")
 						button(type="submit",class="btn btn-default") SUSCRIBIRSE
 				+div-aweita('logo_aweita.jpg','libero','Aweita.pe')
-				+div-aweita('logo_libero.jpg','libero','Libero.pe')
-				+div-aweita('logo_popular.jpg','El Popular','el Popular.pe')
-				+div-aweita('logo_wapa.jpg','Wapa','Wapa.pe')
 				.encuesta
 					.pregunta.text-center
 						span.ico
 							img(src="assets/image/img_pregunta.png",alt="encuesta")
 						h4 La pregunta de hoy
 						p ¿Cree usted que la Premier Ana Jara debe renunciar?
-						
-						input(class="choice",value="Sí")
-						input(class="choice",value="Sí")
-						button(class="btn-submit",type="submit") VOTAR
+						.radio
+							label
+								input(type="radio",class="choice",value="Sí")
+								span 
+									strong Sí
+						.radio
+							label
+								input(type="radio",class="choice",value="Sí")
+								span 
+									strong No
+						button(class="btn-submit btn-default",type="submit") VOTAR
 						a.more Ver Resultados
-					.pregunta
+					.pregunta.text-center
+						h4 La pregunta de ayer
 						p ¿Cree que se militarizó la conmemoración del fallo de La Haya en Lima?
 						.progress-bar-lleno
-							.progress-bar-estado
-								span Sí 40%
+							.progress-bar-yes
+								span Sí 
+									strong 40%
 						.progress-bar-lleno
-							.progress-bar-estado
-								span No 60%
+							.progress-bar-no
+								span No
+									strong  60%
+				+div-aweita('logo_libero.jpg','libero','Libero.pe')
+				+div-aweita('logo_popular.jpg','El Popular','el Popular.pe')
+				+div-aweita('logo_wapa.jpg','Wapa','Wapa.pe')
+				.encuesta
+					.pregunta.text-center
+						span.ico
+							img(src="assets/image/img_reporteroc.png",alt="encuesta")
+						h4 
+							strong Reportero Ciudadano
+						img.w-100(src="assets/image/img_sd_reporteroc.jpg",alt="encuesta")
+						h5.text-left 
+							strong Estacionamiento indebido
+						p.text-left ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+						button(class="btn-submit btn-default",type="submit") ENVIAR FOTOS
+						a.more.red Más fotos
 						
