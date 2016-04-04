@@ -1,0 +1,27 @@
+section#ultimas-noticias
+	.container-fluid
+		.row
+			.col-sm-offset-2.col-sm-8
+			.col-sm-4
+				.encuesta
+					.pregunta
+						span.ico
+							img(src="")
+						h4 La pregunta de hoy
+						p ¿Cree usted que la Premier Ana Jara debe renunciar?
+						input(class="choice",value="Sí")
+						input(class="choice",value="Sí")
+						button(class="btn-submit",type="submit") VOTAR
+						a.more Ver Resultados
+					.pregunta
+						p ¿Cree que se militarizó la conmemoración del fallo de La Haya en Lima?
+						.progress-bar-lleno
+							.progress-bar-estado
+								span Sí 40%
+						.progress-bar-lleno
+							.progress-bar-estado
+								span No 60%
+				+div-aweita('logo_libero.jpg','libero','Libero.pe')
+				+div-aweita('logo_popular.jpg','El Popular','el Popular.pe')
+				+div-aweita('logo_wapa.jpg','Wapa','Wapa.pe')
+						

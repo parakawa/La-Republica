@@ -46,3 +46,31 @@ mixin col-columnist()
 		+columnist('blog_avatar_03.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
 	.col-sm-4.pd-1
 		+columnist('img_blogueros.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
+
+mixin titulares(title,img,alt,titleimg,subtitle)
+	.titulares.text-center
+		h5.red.f-700=title
+		a(href="")
+			.img-titular
+				img.w-100(src="assets/image/"+img,alt=alt)
+				.shadow
+					h5.white=titleimg
+		h6 Todo sobre 
+			span.f-700=subtitle
+mixin aweita-item(enlace,img,subtitle)
+	.aweita-item
+		a(href=enlace)
+			.img-item
+				img(src="assets/image/"+img,alt="img-aweita")
+			h6=subtitle
+mixin div-aweita(img,alt,name)
+	.aweita
+		.img-aweita.text-center
+			img(src="assets/image/"+img,alt=alt)
+		+aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+		+aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+		+aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+		+aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+		p
+			span Más en 
+				a(href="")=name
