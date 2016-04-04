@@ -1,5 +1,8 @@
 mixin img(name,alt)
 	img(src="assets/image/"+name,alt=alt)
+mixin img-border(name,alt)
+	img.border(src="assets/image/"+name,alt=alt)
+
 mixin columnist(img,alt,name,desc)
 	.columnist
 		.img-col
@@ -74,3 +77,28 @@ mixin div-aweita(img,alt,name)
 		p
 			span Más en 
 				a(href="")=name
+mixin columnistas()
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares
+	.slick.text-center
+		+img-border('img-columnistas.jpg','columnisra').border
+		h5 Mario Vargas Llosa
+		h6.f-700 Preliminares

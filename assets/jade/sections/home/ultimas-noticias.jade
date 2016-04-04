@@ -4,11 +4,25 @@ section#ultimas-noticias
 			.col-sm-offset-2.col-sm-8
 			.col-sm-4
 				.encuesta
-					.pregunta
+					.pregunta.text-center
 						span.ico
-							img(src="")
+							img(src="assets/image/img_sucribe.png",alt="encuesta")
+						h3 
+							strong Suscríbete 
+						|a nuestro boletín
+						input(type="text",class="text-control")
+						button(type="submit",class="btn btn-default") SUSCRIBIRSE
+				+div-aweita('logo_aweita.jpg','libero','Aweita.pe')
+				+div-aweita('logo_libero.jpg','libero','Libero.pe')
+				+div-aweita('logo_popular.jpg','El Popular','el Popular.pe')
+				+div-aweita('logo_wapa.jpg','Wapa','Wapa.pe')
+				.encuesta
+					.pregunta.text-center
+						span.ico
+							img(src="assets/image/img_pregunta.png",alt="encuesta")
 						h4 La pregunta de hoy
 						p ¿Cree usted que la Premier Ana Jara debe renunciar?
+						
 						input(class="choice",value="Sí")
 						input(class="choice",value="Sí")
 						button(class="btn-submit",type="submit") VOTAR
@@ -21,7 +35,4 @@ section#ultimas-noticias
 						.progress-bar-lleno
 							.progress-bar-estado
 								span No 60%
-				+div-aweita('logo_libero.jpg','libero','Libero.pe')
-				+div-aweita('logo_popular.jpg','El Popular','el Popular.pe')
-				+div-aweita('logo_wapa.jpg','Wapa','Wapa.pe')
 						

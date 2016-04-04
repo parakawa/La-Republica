@@ -146,5 +146,51 @@ body {
   background: url("../image/trama_square.jpg") repeat left top;
   padding: 2.5em 0.5em 0.8em 0.5em;
   margin: 0 0 30px; }
+  #ultimas-noticias .encuesta .pregunta {
+    background: #FFF;
+    padding: 1em 12px; }
+  #ultimas-noticias .encuesta .ico {
+    display: block;
+    margin: -2.8em 0 0.8em; }
+  #ultimas-noticias .encuesta p {
+    font-size: 0.8em;
+    font-weight: bold; }
+  #ultimas-noticias .encuesta .text-control {
+    background-color: #F2F2F2;
+    box-shadow: 1px 1.5px 0 0px rgba(0, 0, 0, 0.3) inset;
+    margin: 10px 0;
+    max-width: 100%; }
+  #ultimas-noticias .encuesta .btn-default {
+    color: white;
+    background-color: #BA1414;
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 4%;
+    border: none; }
+
+#slider {
+  padding: 20px 0; }
+  #slider .title {
+    height: 5px;
+    background: #C00101; }
+    #slider .title span {
+      background: #C00101;
+      color: white;
+      font-size: 20px;
+      padding: 5px 10px;
+      position: relative;
+      z-index: 100; }
+  #slider .slick {
+    margin: 40px 2px 20px 2px;
+    display: inline-block;
+    position: relative; }
+    #slider .slick h5 {
+      font-size: 0.8em; }
+    #slider .slick .border {
+      border: 5px solid white; }
+  #slider .columnistas {
+    position: relative;
+    display: block;
+    box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
