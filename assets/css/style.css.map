@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAE,OAAQ;EACN,OAAO,EAAE,KAAK",
-"sources": ["../sass/sections/_blog.scss"],
-"names": [],
-"file": "style.css"
-}
