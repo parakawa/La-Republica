@@ -1,0 +1,45 @@
+include mixins
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title PORTADA
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/portada.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+  body
+    section.title
+        h1.headline
+            |Guerra en la municipalidad de 
+            |lima Metropolitana
+    div.container
+        .row
+            .col-md-12
+                .social-icons
+                    +social("face")
+                    +social("twit")
+                    +social("goo")
+                    +social("cir1")
+                    span.twelve Hace 12 minutos
+                    +social("cir") 
+                    span.politic POLÍTICA
+        .row
+            .col-md-10
+                p.jne JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+                img.portada1(src="assets/image/img_grid_principal.jpg")
+            .col-md-6
+                p Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por s/.3 000 millones  | FOTOS 
+                img.portada2(src="assets/image/img_grid_secundario.jpg")
+                p.final Sub-20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO
+                img.portada3(src="assets/image/img_grid_especiales.jpg")

@@ -1,0 +1,115 @@
+section.title .headline {
+  font-size: 43px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 30px;
+  width: 884px;
+  margin: auto;
+  font-size: 50px;
+  font-family: "PT Sans",sans-serif; }
+
+.container .col-md-12 .social-icons {
+  text-align: center;
+  margin-left: 128px;
+  margin-top: 19px;
+  margin-bottom: 18px; }
+  .container .col-md-12 .social-icons .face {
+    color: #337ab7;
+    background-color: #e5e5e5;
+    height: 28px;
+    width: 28px;
+    margin-right: 6px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 5px #337ab7; }
+  .container .col-md-12 .social-icons .twit {
+    color: #00ecff;
+    background-color: #e5e5e5;
+    height: 28px;
+    width: 28px;
+    margin-right: 6px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 5px #00ecff; }
+  .container .col-md-12 .social-icons .goo {
+    color: #ce3333;
+    background-color: #e5e5e5;
+    height: 28px;
+    width: 28px;
+    margin-right: 6px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 7px #00ecff;
+    background-color: #e5e5e5;
+    height: 28px;
+    width: 28px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 5px #ce3333; }
+  .container .col-md-12 .social-icons .cir1 {
+    color: #555;
+    margin-right: 44px;
+    font-size: 10px;
+    margin-left: 34px; }
+  .container .col-md-12 .social-icons .cir {
+    color: #555;
+    margin-right: 44px;
+    font-size: 10px;
+    margin-left: 34px; }
+  .container .col-md-12 .social-icons .twelve {
+    font-size: 12px;
+    color: #555;
+    font-family: "PT Sans",sans-serif; }
+  .container .col-md-12 .social-icons .politic {
+    position: relative;
+    font-size: 12px;
+    color: #555;
+    font-family: "PT Sans",sans-serif; }
+.container .col-md-10 .jne {
+  position: absolute;
+  z-index: 21;
+  margin-top: 288px;
+  color: white;
+  font-size: 38px;
+  text-shadow: 2px 2px black;
+  font-family: "PT Sans",sans-serif;
+  font-size: 35px;
+  width: 405px;
+  font-weight: bolder;
+  margin-left: 28px;
+  line-height: 39px;
+  margin-top: 379px; }
+.container .col-md-6 p {
+  position: absolute;
+  z-index: 21;
+  margin-top: 162px;
+  margin-left: -92px;
+  color: white;
+  font-size: 22px;
+  width: 399px;
+  line-height: 23px;
+  font-weight: bolder;
+  text-shadow: 2px 2px #333;
+  font-family: "PT Sans",sans-serif; }
+.container .col-md-6 .portada2 {
+  margin-left: -122px; }
+.container .col-md-6 .final {
+  position: absolute;
+  z-index: 21;
+  margin-top: 180px;
+  color: white;
+  font-size: 22px;
+  text-shadow: 2px 2px #333;
+  font-family: "PT Sans",sans-serif; }
+.container .col-md-6 .portada3 {
+  width: 459px;
+  margin-left: -121px;
+  margin-top: 11px;
+  margin-bottom: 58px; }
+
+/*# sourceMappingURL=portada.css.map */

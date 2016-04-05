@@ -1,0 +1,45 @@
+footer {
+  background-color: #E6E6E6;
+  height: 560px;
+  width: 100%;
+  font-family: "PT Sans",sans-serif; }
+  footer .row {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.45); }
+    footer .row .col-md-4 {
+      border-right: 2px solid rgba(253, 247, 247, 0.51);
+      margin-top: 2%;
+      padding-bottom: 105px;
+      margin-bottom: 40px; }
+      footer .row .col-md-4 img {
+        margin-top: 108px;
+        margin-left: 51px;
+        height: 70px; }
+      footer .row .col-md-4 h1 {
+        font-family: "PT Sans",sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 40px; }
+      footer .row .col-md-4 ul li {
+        list-style: none;
+        font-family: "PT Sans",sans-serif;
+        font-size: 13px;
+        font-weight: lighter;
+        margin-left: 5px; }
+      footer .row .col-md-4 p {
+        font-family: "PT Sans",sans-serif;
+        font-size: 11px;
+        margin-left: 40px; }
+    footer .row .col-md-3 {
+      margin-top: 33px; }
+      footer .row .col-md-3 ul li {
+        list-style: none;
+        font-size: 14px; }
+        footer .row .col-md-3 ul li a {
+          color: black; }
+  footer .last-headline .col-md-12 p {
+    font-family: "PT Sans",sans-serif;
+    font-size: 10px;
+    margin-left: 240px;
+    margin-top: 22px; }
+
+/*# sourceMappingURL=footer.css.map */

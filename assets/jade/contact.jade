@@ -1,0 +1,79 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title CONTACT
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/contact.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+  body
+    div.container
+        h1 Contáctese con Nosotros
+        p Llena este formulario si necesita enviarnos información acerca del contenido del sitio web,su funcionabilidad,o si tiene alguna propuesta de información o mejora para el sitio.Así mismo,puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+    form
+        .form-group.row
+            label.col-sm-2.form-control-label(for='inputEmail3') 
+            .col-sm-10
+                input#inputEmail3.form-control(type='email', placeholder='Nombres Completos')
+        .form-group.row
+            label.col-sm-2.form-control-label(for='inputPassword3')
+            .col-sm-10
+                input#inputPassword3.form-control(type='password', placeholder='Correo Electrónico')
+        .form-group.row
+            label.col-sm-2.form-control-label(for='inputPassword3')
+            .col-sm-10
+                input#inputPassword3.form-control(type='password', placeholder='Teléfonos') 
+                p.opcional  (Opcional)
+        .form-group.row
+            label.col-sm-2 
+            .col-sm-10
+                .radio
+                    p.choose Elija un destinatario
+                    label
+                    input#gridRadios1(type='radio', name='gridRadios', value='option1', checked='')
+                    | Sugerencia para el sitio web 
+                    p.pull-right (Ej:funcionamiento y mejoras para el sitio)
+                .radio
+                    label
+                    input#gridRadios2(type='radio', name='gridRadios', value='option2')
+                    | Dirección periodística
+                    p.pull-right (Ej:Sugerencia para la nota de prensa)
+                .radio
+                    label
+                    input#gridRadios3(type='radio', name='gridRadios', value='option3', disabled='')
+                    | Dirección Comercial
+                    p.pull-right (Ej:Publicidad en diarios o sitios web)
+                .radio
+                    label
+                    input#gridRadios1(type='radio', name='gridRadios', value='option1', checked='')
+                    | Cartas al director
+                    p.pull-right (Ej:denuncias,comentarios e impresiones)
+                .radio
+                    label
+                    input#gridRadios2(type='radio', name='gridRadios', value='option2')
+                    | Promociones y productos del diario
+                    p.pull-right (Ej:Promociones,tablet,etc)
+                .radio
+                    label
+                    input#gridRadios3(type='radio', name='gridRadios', value='option3', disabled='')
+                    | Archivo Periodístico
+                    p.pull-right (Ej:Ediciones impresas/fotos)
+        .form-group.row
+            .col-sm-10
+                .form-group
+                    label(for='comment')
+                    textarea#comment.form-control(rows='5',placeholder="Mensaje")
+        .form-group.row
+            .col-sm-offset-2.col-sm-10
+                button.btn.btn-secondary(type='submit') Enviar

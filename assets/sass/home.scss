@@ -1,0 +1,223 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+.barras {
+    .col-md-5 {
+        .line {
+            width: 302px;
+            margin-left: 0px;
+            border: 4px solid $blue;
+            margin-top: 46px;
+        }
+
+        .special {
+            background-color: rgb(94, 121, 144);
+            width: 168px;
+            margin-left: 65px;
+            margin-top: -39px;
+            height: 47px;
+            line-height: 49px;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+            font-family:$pt;
+        }
+
+        .work {
+            position: absolute;
+            margin-top: -53px;
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 255px;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            margin-left: 21px;
+            font-weight: bolder;
+        }
+    }
+
+    .col-md-8 {
+        .olla1 {
+            width: 170px;
+            height: 242px;
+            margin-left: -8px;
+            margin-top: 28px;
+        }
+
+        p {
+            position: absolute;
+            margin-top: -53px;
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 255px;
+            height: 41px;
+            z-index: 3;
+            line-height: 41px;
+            text-align: center;
+            margin-left: 21px;
+            font-weight: bolder;
+            font-family:$pt;
+        }
+    }
+
+    .col-md-8 {
+        .olla2 {
+            width: 124px;
+            margin-top: 29px;
+            margin-left: -32px;
+            height: 121px;
+            margin-bottom: -50px;
+        }
+
+        .olla3 {
+            width: 124px;
+            height: 112px;
+            margin-top: 57px;
+            margin-left: -31px;
+        }
+    }
+
+    .col-md-16 {
+        .focus {
+            width: 302px;
+            margin-left: -8px;
+            margin-top: 17px;
+        }
+
+        .medios {
+            position: absolute;
+            margin-top: -53px;
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 255px;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            margin-left: 21px;
+            font-weight: bolder;
+            color: black;
+            font-family:$pt;
+        }
+    }
+
+    .col-md-16 {
+        .extincion {
+            width: 303px;
+            margin-left: -8px;
+            margin-top: 20px;
+        }
+
+        .extint {
+            position: absolute;
+            margin-top: -53px;
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 255px;
+            height: 45px;
+            line-height: 21px;
+            text-align: center;
+            margin-left: 21px;
+            font-weight: bolder;
+            font-size: 14px;
+            color: black;
+            font-family:$pt;
+        }
+
+        .gray-separator {
+        	@include grayline(302px,0.5px solid $gray,-6px);
+        }
+
+        .red {
+            width: 302px;
+            margin-left: -4px;
+            border: 4px solid $red;
+            margin-top: 35px;
+        }
+    }
+
+    .col-md-16 {
+        .carlin {
+            background-color: $red;
+            width: 168px;
+            margin-left: 65px;
+            margin-top: -39px;
+            height: 47px;
+            line-height: 49px;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .carlin-text {
+            text-align: center;
+            margin-left: -79px;
+            font-weight: bolder;
+            font-size: 22px;
+            margin-top: 17px;
+            font-family:$pt;
+        }
+
+        p {
+            color: $red;
+            font-weight: bolder;
+            text-align: center;
+            margin-left: -71px;
+            margin-top: 20px;
+            font-family:$pt;
+        }
+
+        .carlin-line {
+        	@include grayline(302px,0.5px solid $gray,-6px);
+            margin-bottom: 3px;
+        }
+    }
+
+    .col-md-16 {
+        margin-bottom: 28px;
+
+        .blog-line {
+            width: 302px;
+            margin-left: 0px;
+            border: 4px solid $blue;
+            margin-top: 46px;
+        }
+
+        .blog {
+            background-color: rgb(94, 121, 144);
+            width: 168px;
+            margin-left: 65px;
+            margin-top: -39px;
+            height: 47px;
+            line-height: 49px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            font-family:$pt;
+        }
+
+        .blog-last-line {
+        	@include grayline(302px,0.5px solid $gray,-6px);
+        }
+    }
+
+    .col-md-16 {
+        .journ {
+            font-size: 14px;
+            text-decoration: underline;
+            position: relative;
+            left: -130px;
+            margin-top: 11px;
+            font-family:$pt;
+        }
+
+        .small {
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+            left: -53px;
+            width: 234px;
+            font-family:$pt;
+        }
+
+        .rodri{
+            margin-bottom: 28px;
+            box-shadow: (-1px) 9px 0px 3px rgba(235, 235, 235, 0.68);
+        }
+    }
+}
