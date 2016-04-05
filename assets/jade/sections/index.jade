@@ -1,0 +1,26 @@
+include ../helpers/variables
+include ../helpers/mixins
+doctype html
+html(lang="es")
+	head
+		title La República
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel="icon" href="assets/image/favicon.ico" type="image/x-icon")
+		link(rel="stylesheet", href="assets/css/dist/font-awesome.min.css")
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', type='text/css')
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', type='text/css')
+		link(rel="stylesheet", href="assets/css/dist/slick-theme.css")
+		link(rel="stylesheet", href="assets/css/dist/slick.css")
+		link(rel="stylesheet", href="assets/css/dist/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/css/main.css")
+	body
+		include ../base/header
+		include home/portada
+		include home/columnistas
+		include home/titulares
+		include home/ultimas-noticias
+		include ../base/footer
+	script(type='text/javascript', src='assets/js/jquery.js')
+	script(type='text/javascript', src='assets/js/bootstrap.min.js')
+	script(type='text/javascript', src='assets/js/slick.min.js')

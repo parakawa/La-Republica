@@ -1,0 +1,237 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.mb-2 {
+  margin-bottom: 2%; }
+
+.mt-2 {
+  margin-top: 2%; }
+
+.pd-1 {
+  padding: 1%; }
+
+.f-300 {
+  font-weight: 300; }
+
+.f-700 {
+  font-weight: 700; }
+
+.gray {
+  color: gray; }
+
+.red {
+  color: #C00101; }
+
+.bg-gray {
+  background-color: #E2E6E9; }
+
+.w-100 {
+  width: 100%; }
+
+#columnistas .view-column {
+  border: 2px solid gray;
+  padding: 35px 10px 10px 10px; }
+#columnistas .columnist {
+  padding: 10px;
+  background-color: #E2E6E9; }
+#columnistas .col-5 {
+  float: left;
+  width: 33.3333%;
+  padding: 0 14px; }
+  @media (max-width: 768px) {
+    #columnistas .col-5 {
+      width: 100%;
+      margin-bottom: 14px; } }
+#columnistas img {
+  border: 2px solid white; }
+#columnistas .img-col {
+  display: inline-block;
+  width: 20%; }
+#columnistas .desc {
+  display: inline-block;
+  padding: 5px 0 0 21px;
+  width: 70%; }
+#columnistas h1, #columnistas h2, #columnistas h3, #columnistas h4, #columnistas h6 {
+  font-weight: 700; }
+#columnistas p {
+  font-size: 0.7em; }
+#columnistas h4 {
+  margin-bottom: 50px; }
+#columnistas h1 {
+  font-size: 2.5em;
+  margin-bottom: 28px; }
+#columnistas h5 {
+  font-size: 1em;
+  font-family: "Oswald", sans-serif; }
+  #columnistas h5 .fa-angle-double-down {
+    font-size: 1.3em;
+    margin-left: 5px; }
+#columnistas .todas {
+  display: block;
+  width: 100%;
+  background: #C00101;
+  border: 1px solid #C00101;
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 3px;
+  max-width: 200px; }
+#columnistas .menu-alfabetico {
+  background-color: #C00101;
+  padding: 20px 50px 10px; }
+  #columnistas .menu-alfabetico li {
+    display: inline-block; }
+    #columnistas .menu-alfabetico li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      padding: 7px 18px; }
+
+/*****TITULARES*****/
+.titulares {
+  position: relative;
+  border: 1px solid #CDCDCD;
+  margin-bottom: 30px; }
+  .titulares .img-titular {
+    position: relative; }
+  .titulares .shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 42%;
+    background: linear-gradient(to bottom, transparent 0%, black 50%); }
+    .titulares .shadow h5 {
+      color: white;
+      left: 0;
+      position: absolute;
+      bottom: 0; }
+
+.row div img {
+  max-width: 100%; }
+
+#ultimas-noticias .aweita, #ultimas-noticias .fotos-destacadas {
+  padding: 20px 10px;
+  margin-top: 20px;
+  border: solid #ccc 1px; }
+  #ultimas-noticias .aweita .img-aweita, #ultimas-noticias .fotos-destacadas .img-aweita {
+    margin-bottom: 20px; }
+  #ultimas-noticias .aweita a, #ultimas-noticias .fotos-destacadas a {
+    color: black; }
+  #ultimas-noticias .aweita .aweita-item, #ultimas-noticias .fotos-destacadas .aweita-item {
+    padding-bottom: 20px; }
+    #ultimas-noticias .aweita .aweita-item h6, #ultimas-noticias .fotos-destacadas .aweita-item h6 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 160px;
+      height: 57px;
+      padding-left: 12px; }
+    #ultimas-noticias .aweita .aweita-item .img-item, #ultimas-noticias .fotos-destacadas .aweita-item .img-item {
+      display: table-cell;
+      vertical-align: middle; }
+  #ultimas-noticias .aweita p, #ultimas-noticias .fotos-destacadas p {
+    height: 16px;
+    margin: 8px 20px 0px 20px;
+    text-align: center; }
+    #ultimas-noticias .aweita p a, #ultimas-noticias .fotos-destacadas p a {
+      color: #C00101; }
+    #ultimas-noticias .aweita p span, #ultimas-noticias .fotos-destacadas p span {
+      display: inline-block;
+      padding-bottom: 10px;
+      border-bottom: solid #C00101 5px; }
+#ultimas-noticias .encuesta {
+  background: url("../image/trama_square.jpg") repeat left top;
+  padding: 2.5em 0.5em 0.8em 0.5em;
+  margin: 20px 0 30px; }
+  #ultimas-noticias .encuesta .pregunta {
+    background: #FFF;
+    padding: 1em 12px; }
+  #ultimas-noticias .encuesta .ico {
+    display: block;
+    margin: -2.8em 0 0.8em; }
+  #ultimas-noticias .encuesta p {
+    font-size: 0.8em;
+    font-weight: bold; }
+  #ultimas-noticias .encuesta .text-control {
+    background-color: #F2F2F2;
+    box-shadow: 1px 1.5px 0 0px rgba(0, 0, 0, 0.3) inset;
+    margin: 10px 0;
+    max-width: 100%; }
+  #ultimas-noticias .encuesta .btn-default {
+    color: white;
+    background-color: #BA1414;
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 4%;
+    border: none; }
+  #ultimas-noticias .encuesta .progress-bar-lleno {
+    background: #dddddd url("../image/barprogress_bg.jpg") repeat-x;
+    width: 100%;
+    margin: 10px 0; }
+    #ultimas-noticias .encuesta .progress-bar-lleno .progress-bar-yes {
+      background-color: #CDF3A6;
+      padding: 1%;
+      width: 40%; }
+    #ultimas-noticias .encuesta .progress-bar-lleno .progress-bar-no {
+      background-color: #F0A3A3;
+      padding: 1%;
+      width: 60%; }
+  #ultimas-noticias .encuesta .more {
+    display: block;
+    font-weight: 300;
+    margin: 0.5em 0 0;
+    text-align: center; }
+  #ultimas-noticias .encuesta .btn-submit {
+    border-radius: 4px; }
+#ultimas-noticias .fotos-destacadas {
+  border: none;
+  border-bottom: 1px solid #CDCDCD;
+  margin: 0 0 20px 20px;
+  margin: 30px 0 20px; }
+  #ultimas-noticias .fotos-destacadas .title {
+    border-top: 4px solid #768696;
+    position: relative; }
+    #ultimas-noticias .fotos-destacadas .title span {
+      display: inline-block;
+      padding: 6px 10px;
+      line-height: 1;
+      background-color: #768696;
+      color: white;
+      position: relative;
+      top: -10px; }
+  #ultimas-noticias .fotos-destacadas h4 {
+    margin: 15px 0; }
+  #ultimas-noticias .fotos-destacadas h6 {
+    font-weight: 700; }
+
+#slider {
+  padding: 20px 0; }
+  #slider .title {
+    height: 5px;
+    background: #C00101; }
+    #slider .title span {
+      background: #C00101;
+      color: white;
+      font-size: 20px;
+      padding: 5px 10px;
+      position: relative;
+      z-index: 100; }
+  #slider .slick {
+    margin: 40px 2px 5px 0px;
+    display: inline-block;
+    position: relative; }
+    #slider .slick h5 {
+      font-size: 0.8em; }
+    #slider .slick img {
+      margin: 0 auto; }
+    #slider .slick .border {
+      border: 5px solid white; }
+  #slider .columnistas {
+    position: relative;
+    display: block;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */
