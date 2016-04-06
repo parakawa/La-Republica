@@ -1,0 +1,57 @@
+include ../helpers/mixins.jade
+header
+  .v-center.bg-top
+    +image('assets/image/banner_top.jpg')(class="banner_top")
+  .container-fluid
+    .row.bg-top
+      .col-md-offset-2.col-md-12
+        ul.nav.navbar-nav
+          li 
+            a(href="#services") SERVICIOS
+          li 
+            a(href="#portfolio") PORTAFOLIO
+          li
+            a(href="#portfolio") FUNDACION GUSTAVO MOHME LLONA   
+        ul.nav.navbar-nav.flex
+          +button("danger", "warning.html", "mini btn-sus") SUSCRIBETE AL BOLETIN
+          .networks-bg
+          div.search.inline
+            a(href="#").search-link SEARCH
+            span.glyphicon.glyphicon-search
+    .row
+      .col-md-offset-2.col-md-3
+        .logo
+      .col-md-9
+        .titular.inline
+          h6.inline DOMINGO
+          p.mg-0 
+            b HABLA LA LIDERESA DEL NACIONALISMO        
+        .editorial-box.inline
+          +image('assets/image/img_editorial_text.jpg')
+          .editorial.inline
+            p.inline.mg-0
+              b La corrupción, los orígenes
+            p
+              em por: Gustavo Mohme LLona
+    .row
+      .col-md-offset-2.col-md-12.pills
+        ul.nav.nav-pills
+          +link('#', 'POLITICA')(class="btn")
+          +link('#', 'ECONOMIA')(class="btn")
+          +link('#', 'SOCIEDAD')(class="btn")
+          +link('#', 'ELECC.REGIONALES')(class="btn")
+          +link('#', 'DEPORTES')(class="btn")
+          +link('#', 'CHAMPIONS')(class="btn")
+          +link('#', 'ESPECTACULOS')(class="btn")
+          +link('#', 'ED.IMPRESA')(class="btn")
+          +link('#', 'REGIONALES')(class="btn")
+          li.dropdown
+            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") MAS SECCIONES
+              span.caret
+            ul.dropdown-menu
+              li 
+                a(href="blog.html") BLOG
+              li 
+                a(href="columnistas.html") COLUMNISTAS
+              li 
+                a(href="contact.html") CONTACTANOS

@@ -1,0 +1,22 @@
+@import "../helpers/utilities.scss";
+
+@mixin facebook($fb-color, $border-bottom)
+{
+	@extend %social-network;
+    color: $fb-color;
+    border-bottom: $border-bottom;
+}
+
+@mixin twitter($t-color, $border-bottom)
+{
+	@extend %social-network;
+    color: $t-color;
+    border-bottom: $border-bottom;
+}
+
+@mixin google-plus($g-color, $border-bottom)
+{
+	@extend %social-network;
+    color: $g-color;
+    border-bottom: $border-bottom;
+}

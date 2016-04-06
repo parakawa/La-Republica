@@ -1,0 +1,159 @@
+//- Button mixin
+mixin button(style, href, size)
+ - var style = (typeof style === 'undefined') ? "default" : style
+  - var href = (typeof href === 'undefined') ? "#" : href
+   case size
+    when "large"
+     - size = "btn-lg"
+    when "small"
+     - size = "btn-sm"
+    when "mini"
+     - size = "btn-xs"
+ 
+   a( class=["btn", "btn-" + style, size], href=href )
+        block
+
+//- Declaration cols
+mixin link-ing(name)
+ .slick(class!=attributes.class)= name
+    block
+
+mixin article(title, parrafo)
+ h3= title
+ p=parrafo
+
+//- card
+mixin col-3
+ div.col-md-3.col-sm-3.col-xs-12
+  div.card 
+   block
+
+mixin image(src)
+ img(class!=attributes.class, src=src)
+ 
+mixin h4(title, parrafo)
+ h4= title
+ p=parrafo
+ 
+//- our amazing team
+
+- var loremipsum =" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum, id. Hic quisquam similique atque. Alias atque accusantium perspiciatis, totam?"
+
+mixin networks()
+ .networks.inline
+    a(href="#").social-network.fa.fa-facebook
+    a(href="#").social-network.fa.fa-twitter
+    a(href="#").social-network.icon-google-plus
+    a(href="#").social-network.fa.fa-envelope
+    a(href="#").social-network.fa.fa-rss
+
+mixin networks-simply()
+  .networks.inline
+    a(href="#").social-network.fa.fa-facebook
+    a(href="#").social-network.fa.fa-twitter
+    a(href="#").social-network.icon-google-plus   
+
+//-forms
+mixin form
+ div.col-md-6.col-sm-6.col-xs-12
+  form(role="form")
+   .form-group
+    block
+
+mixin field(type, name, placeholder)
+ input(type=type, name=name, placeholder=placeholder, class!=attributes.class)
+
+mixin link(href, name)
+  li(role="presentation")
+    a(class!=attributes.class, href=href)= name
+
+mixin col-blog()
+  .row.v-center
+    .col-md-5.col-sm-5.col-xs-8
+      +article-blog('12 de Abril de 1995','El gol de la muerte')(class="text-center")
+        .author
+          +author-img('assets/image/blog_avatar_01.jpg', 'BLOG', 'LIBROS')(class="mg-0")
+    .col-md-5.col-sm-5.col-xs-8
+      +article-blog('12 de Abril de 1995','Dios ha muerto...tengo las manos cubiertas de sangre')(class="text-center")
+        .author-rel
+          +author-img('assets/image/blog_avatar_01.jpg', 'BLOG', 'Ya lo pasado, PASADO')(class="mg-0")
+    .col-md-5.col-sm-5.col-xs-8
+      +article-blog('12 de Abril de 1995','¿Cual es tu queso favorito?')(class="text-center")
+        .author
+          +author-img('assets/image/blog_avatar_01.jpg', 'BLOG', 'Decimas cosas')(class="mg-0")
+
+mixin article-blog(name, title)
+  .article-blog
+    p(class!=attributes.class)=name
+    h3(class!=attributes.class)=title
+    block
+
+mixin author-img(src, title, author)
+  .author-img
+    img(class!=attributes.class, src=src)
+  h5(class!=attributes.class)=title
+  h4(class!=attributes.class)=author
+
+mixin article(name, title)
+  .article
+    p(class!=attributes.class)=name
+    h3(class!=attributes.class)=title
+    block
+
+mixin col-noticias(title)
+  +article("Hace 1 hora 12 mins", title)
+    .row.flex
+      .col-xs-4
+        +image('assets/image/img_news.jpg')(class="profile")
+      .col-xs-12
+        p=loremipsum
+        .bottom
+          +networks-simply
+          +image('assets/image/bullet.gif')(class="inline bullet")
+          +image('assets/image/ico_comment.png')(class="inline")
+          h5.inline 10
+          +image('assets/image/bullet.gif')(class="inline bullet")
+          block
+
+mixin networks-simply()
+  .networks.inline
+    a(href="#").fa.fa-facebook
+    a(href="#").fa.fa-twitter
+    a(href="#").fa.fa-google-plus 
+
+
+mixin banners
+  .row
+    .col-md-2
+      .banner-left
+        +image('assets/image/banner-aside-home.jpg')
+    .col-md-12.pills
+      .slide
+        .title
+          h3 TEMAS DEL DIA
+        .slick-col(data-slick='{"slidesToShow":6, "slidesToScroll":1}' class="v-center")
+          +link-ing('Globos de oro')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Youtube')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('PNP')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Charlie Hebdo')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('FC Barcelona')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Alianza Lima')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Balon de oro')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Globos de oro')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Youtube')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('PNP')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+          +link-ing('Charlie Hebdo')(class="inline width-item")
+            +image('assets/image/bullet.gif')(class="inline bullet")
+      .v-center
+        +image('assets/image/banner-header.jpg')(class="banner-top")
+      block

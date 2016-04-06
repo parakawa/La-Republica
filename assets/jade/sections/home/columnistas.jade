@@ -1,0 +1,13 @@
+include ../../helpers/mixins-paty.jade
++banners()
+  section#slider
+    .container-fluid
+      .row
+        .col-sm-offset-2.col-sm-12.bg-gray
+          .title.text-center
+            span COLUMNISTAS
+          .slider-col(data-slick='{"slidesToShow": 6, "slidesToScroll": 6}')
+            +columnistas()
+            +columnistas()
+            +columnistas()
+  include titulares.jade

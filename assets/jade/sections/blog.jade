@@ -1,0 +1,20 @@
+doctype html
+html
+  include ../base/head.jade
+  body
+    include ../base/header.jade
+    section
+      .container-fluid
+        +banners
+          .col-md-16.blog.noticias
+            h2 Blogs
+            h4 Lo último en blogs
+              span.fa.fa-angle-double-down
+            +col-blog
+            +col-blog
+            +col-blog
+            +col-blog
+            +col-blog
+            +col-blog
+    script(src="assets/js/bootstrap.min.js")
+    script(src="assets/js/main.js")

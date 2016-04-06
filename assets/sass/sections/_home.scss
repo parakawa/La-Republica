@@ -1,0 +1,248 @@
+@import "../helpers/mixins.scss";
+@import "../base/header.scss";
+
+.flex{
+	display: flex;
+.profile{
+	width: 100%;
+	margin-top: 14px;
+}
+.col-sm-8{
+	p{
+		margin-top: 14px;
+	}
+}
+}
+
+.bottom{
+	position: relative;
+    top: 10px;
+
+.fa-youtube-play{
+	margin: 0px 14px;
+    color: #C33C2D;
+}
+}
+
+%social-network{
+	padding: 7px;
+    background-color: #EEEEEE;
+    margin: 14px 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.article{
+.fa-facebook{	
+	@include facebook($fb-color, 3px solid $fb-color);
+}
+.fa-twitter{	
+	@include twitter($t-color, 3px solid $t-color);
+}
+.fa-google-plus{
+	@include google-plus($g-color, 3px solid $g-color);
+}
+}
+
+.bullet{
+	    margin: 14px 14px 14px 7px;
+}
+
+/*****TITULARES*****/
+.titulares{
+    position: relative;
+    border: 1px solid #CDCDCD;
+    margin-bottom: 30px;
+	.img-titular{
+		position: relative;
+	}
+ 	.shadow{
+ 		position:absolute;
+ 		left:0;
+ 		bottom:0;
+ 		width:100%;
+ 		height:42%;
+ 		background: linear-gradient(to bottom, transparent 0%, black 50%);
+		h5{
+			color:white;
+			left:0;
+			position:absolute;
+			bottom:0;
+		}
+ 	}
+ 
+}
+
+#titulares, #ultimas-noticias{
+.row div img {
+  max-width: 100%;
+}
+}
+
+#ultimas-noticias{
+	.aweita,.fotos-destacadas{
+		padding: 20px 10px;
+		margin-top: 20px;
+  		border: solid #ccc 1px;
+		.img-aweita{
+			margin-bottom: 20px;
+		}
+		a{
+			color: black;
+		}
+  		.aweita-item,{
+  			padding-bottom: 20px;
+  			h6{
+  			   display: table-cell;
+			   vertical-align: middle;
+			   width: 160px;
+			   height: 57px;
+			   padding-left: 12px;
+  			}
+	  		.img-item{
+	  			display: table-cell;
+  				vertical-align: middle;
+	  			
+	  				}
+				}
+		p{
+			height: 16px;
+			margin: 8px 20px 0px 20px;
+			text-align: center;
+			a{
+				color: $red;
+			}
+
+			span{
+				display: inline-block;
+				padding-bottom: 10px;
+				border-bottom: solid $red 5px;
+			}
+		}
+
+ 	}
+ 	.encuesta{
+ 		  background: url("../image/trama_square.jpg") repeat left top;
+		  padding: 2.5em 0.5em 0.8em 0.5em;
+		  margin: 20px 0 30px;
+ 		.pregunta{
+ 			background: #FFF;
+  			padding: 1em 12px;
+ 		}
+ 		.ico{
+ 			  display: block;
+			  margin: -2.8em 0 0.8em; 
+ 		}
+ 		p{
+ 			font-size: 0.8em;
+  			font-weight: bold;
+ 		}
+
+ 		.text-control{
+ 			background-color: #F2F2F2;
+  			box-shadow: 1px 1.5px 0 0px rgba(0, 0, 0, 0.3) inset;
+  			margin:10px 0;
+  			max-width: 100%;
+ 		}
+
+ 		.btn-default{
+ 			  color: white;
+			  background-color: #BA1414;
+			  width: 100%;
+			  font-weight: bolder;
+			  margin-top: 4%;
+			  border: none;
+ 		}
+		.progress-bar-lleno{
+			background: #dddddd url("../image/barprogress_bg.jpg") repeat-x;
+  			width: 100%;
+  			margin:10px 0;
+  			.progress-bar-yes{
+  				background-color: #CDF3A6;
+				padding: 1%;
+				width: 40%;
+  			}
+  			.progress-bar-no{
+  				background-color: #F0A3A3;
+				padding: 1%;
+				width: 60%;
+  			}
+		}
+		.more{
+			display: block;
+			font-weight: 300;
+			margin: 0.5em 0 0;
+			text-align: center;
+		}
+
+		.btn-submit{
+			border-radius: 4px;
+		}
+	}
+	.fotos-destacadas{
+		  border:none;
+		  border-bottom: 1px solid #CDCDCD;
+		  margin: 0 0 20px 20px;
+		  margin: 30px 0 20px;
+		  .title{
+		  	border-top: 4px solid #768696;
+  			position: relative;
+  				span {
+  				  display: inline-block;
+				  padding: 6px 10px;
+				  line-height: 1;
+				  background-color: #768696;
+				  color: white;
+				  position: relative;
+				  top: -10px;
+  				}
+		  }
+
+		  h4{
+		  	margin:15px 0;
+		  }
+		  h6{
+		  	font-weight:700;
+		  }
+	}
+}
+#slider{
+	padding: 20px 0;	
+
+	.title{
+		height: 5px;
+		background: $red;
+		
+	span{
+		background: $red;
+		color: white;
+		font-size: 20px;
+		padding: 5px 10px;
+		position:relative;
+		z-index: 100;
+		}
+	}
+
+	.slick{
+		margin: 40px 2px 5px 0px;
+		display: inline-block;
+		position: relative;
+		h5{
+			font-size: 0.8em;
+		}
+		img{
+			margin:0 auto;
+		}
+		.border{
+			border: 5px solid white;
+		}
+	}
+
+	.columnistas{
+		position: relative;
+		display: block;
+		box-sizing: border-box;
+	}
+}

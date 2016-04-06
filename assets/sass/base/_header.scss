@@ -1,0 +1,143 @@
+@import "../helpers/utilities.scss";
+
+.logo{
+	background: url('../image/logo-la-republica.jpg') no-repeat;
+	background-size: contain;
+    min-height: 42px;
+    margin-top: 28px;
+}
+.btn-sus{
+	padding: 6px 4px;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.networks-bg{
+	background: url('../image/social_sprite.png') no-repeat;
+    background-size: cover;
+    min-height: 33px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-left: 7px;
+    margin-top: 7px;	
+}
+
+.bg-top{
+	background-color: #F4F5F7;
+}
+
+.titular{
+    border: 1px solid #C3C3C3;
+    padding: 0px 14px 14px 14px;
+    margin-top: 21px;
+	p{
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+	h6{
+		padding: 7px;
+	    background-color: red;
+	    position: relative;
+	    bottom: 14px;
+	    left: 82px;
+	    margin: 0;
+	}
+}
+
+.editorial{
+	border: 1px solid #C3C3C3;
+    height: 63px;
+	position: relative;
+    top: 11px;
+    padding: 7px 21px 0px 14px;
+}
+
+.editorial-box{
+	margin: 0px 7px 14px 14px;
+    position: relative;
+    bottom: 12px;
+
+img{
+	position: relative;
+    left: 5px;
+    width: 19px;
+    top: 5px;
+}
+}
+
+.nav-pills{
+    background-color: #BA1414;
+    border-radius: 4px;
+li{
+	font-size: 15px;
+	border-right: 1px solid red;
+    border-radius: 4px;
+	a{
+	    padding: 7px 5px;
+	    color: white;
+	    font-size: 12px;
+	}
+.dropdown{
+	&:hover{
+		color:red;
+	}
+}
+&:nth-last-child(1){
+	border-right: 0px;
+}
+}
+}
+.slick-col{
+	width: 85%;
+    position: relative;
+    top: 16px;
+.width-item{
+	    width: 127px !important;
+}
+}
+.slide{
+	display: flex;
+	height: 44px;
+	background-color: #E4E7EA;
+	margin-top: 14px;
+    margin-bottom: 14px;
+	.title{
+		width: 12.5%;
+		background-color: #111417;
+		h3{
+			font-size: 12px;
+			color:white;
+		}
+	}
+}
+
+.pills{
+	padding-right: 42px;
+}
+
+.banner-left{
+	img{
+		width: 100%;
+		height: 600px;
+	}
+}
+
+.banner-top{
+	img{
+		width: 100%;
+	}
+}
+
+.noticias{
+	h4{
+		color:gray;
+	}
+	.fa-angle-double-down{
+		color: #B53521;
+    	margin-left: 7px;
+	}
+}
+
+.search{
+	margin-top: 14px;
+}

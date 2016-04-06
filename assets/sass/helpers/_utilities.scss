@@ -1,0 +1,55 @@
+@import "../helpers/variables.scss";
+
+body{
+	font-family: $open-sans;
+}
+
+.inline{
+	display: inline-block !important;
+}
+
+.v-center{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.mg-0{
+	margin:0px;
+}
+
+.mb-2{
+	margin-bottom: 2%;
+}
+
+.mt-2{
+	margin-top: 2%;
+}
+
+.pd-1{
+	padding:1%;
+}
+
+.f-300{
+	font-weight: 300;
+}
+
+.f-700{
+	font-weight: 700;
+}
+
+.gray{
+	color: $gray;
+}
+
+.red{
+	color: $red;
+}
+
+.bg-gray{
+	background-color: $bg-gray;
+}
+
+.w-100{
+	width: 100%;
+}
