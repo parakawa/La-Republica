@@ -1,5 +1,4 @@
 @import "../helpers/mixins.scss";
-@import "../base/header.scss";
 
 .flex{
 	display: flex;
@@ -7,6 +6,7 @@
 	width: 100%;
 	margin-top: 14px;
 }
+
 .col-sm-8{
 	p{
 		margin-top: 14px;
