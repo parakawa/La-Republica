@@ -157,3 +157,133 @@ mixin banners
       .v-center
         +image('assets/image/banner-header.jpg')(class="banner-top")
       block
+
+mixin img(name,alt)
+  img(src="assets/image/"+name,alt=alt)
+
+mixin img-border(name,alt)
+  img.border(src="assets/image/"+name,alt=alt)
+
+mixin columnist(img,alt,name,desc)
+  .columnist
+    .img-col
+      +img(img,alt)
+    .desc
+      p.f-700=name
+      h5.f-700.gray=desc
+
+mixin columna(date,title,img,alt,name,desc)
+  .col-5
+    .view-column
+      p.text-center=date
+      h4.text-center=title
+      +columnist(img,alt,name,desc)
+
+mixin col-columna()
+  +columna(
+    'Lima, viernes 31 de marzo del 2016',
+    'El gol del triunfo',
+    'img_author_columnista.jpg',
+    'columnistas',
+    'Augusto Álvaro Rodrich',
+    'Claro y directo')
+  +columna(
+    'Lima, viernes 31 de marzo del 2016',
+    '¿Cuál es tu queso favorito?',
+    'blog_avatar_01.jpg',
+    'columnistas',
+    'Mirko Lauer',
+    'Observador')
+  +columna('Lima, viernes 31 de marzo del 2016',
+    'El gol del triunfo',
+    'img_author_columnista.jpg',
+    'columnistas',
+    'Augusto Álvaro Rodrich',
+    'Claro y directo')
+
+mixin col-columnist()
+  .col-sm-4.pd-1
+    +columnist('blog_avatar_02.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
+  .col-sm-4.pd-1
+    +columnist('blog_avatar_01.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
+  .col-sm-4.pd-1
+    +columnist('blog_avatar_03.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
+  .col-sm-4.pd-1
+    +columnist('img_blogueros.jpg','columnista','Augusto Rodrich','Jaque Perpetuo')
+
+mixin titulares(title,img,alt,titleimg,subtitle)
+  .titulares.text-center
+    h5.red.f-700=title
+    a(href="")
+      .img-titular
+        img.w-100(src="assets/image/"+img,alt=alt)
+        .shadow
+          h5.white=titleimg
+    h6 Todo sobre 
+      span.f-700=subtitle
+
+mixin aweita-item(enlace,img,subtitle)
+  .aweita-item.text-center
+    a(href=enlace)
+      .img-item
+        img(src="assets/image/"+img,alt="img-aweita")
+      h6=subtitle
+
+mixin div-aweita(img,alt,name)
+  .aweita
+    .img-aweita.text-center
+      img(src="assets/image/"+img,alt=alt)
+    +aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+    +aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+    +aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+    +aweita-item('','img_aweita.jpg','André Carrillo:Presidente de Sporting de Lisboa deja libre a Tomás | VIDEO')
+    p
+      span Más en 
+        a(href="")=name
+
+mixin columnistas()
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnisra').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnisra').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnista').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnista').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnista').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+  .slick.text-center
+    +img-border('img-columnistas.jpg','columnista').border
+    h5 Mario Vargas Llosa
+    h6.f-700 Preliminares
+
+//MIXIN DEL FOOTER//
+mixin list1(href,name)
+    li: a(href="#")=name
+mixin list2(href,name)
+    li: a(href="#")=name
+mixin list3(href,name)
+    li: a(href="#")=name
+mixin list4(href,name)
+    li: a(href="#")=name
+
+//MIXIN DE PORTADA//
+mixin social 
+  i.fa.fa-facebook
+mixin social 
+  i.fa.fa-twitter
+mixin social 
+  i.fa.fa-google-plus
+mixin social 
+  i.fa.fa-circle
+

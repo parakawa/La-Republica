@@ -20,3 +20,37 @@
     color: $g-color;
     border-bottom: $border-bottom;
 }
+/*HOME MIXINS*/
+@mixin grayline($ancho,$borde,$m-izq){
+	width:$ancho;
+    border:$borde;
+    margin-left:$m-izq;
+}
+/*PORTADA MIXINS*/
+@mixin circulo($dark-gray, $m-r, $font-s, $m-l) {
+    color: $dark-gray;
+    margin-right: $m-r;
+    font-size: $font-s;
+    margin-left: $m-l;
+}
+
+@mixin estilo-social($light-gray, $alto, $ancho, $m-r, $alto-linea, $text-a, $radio) {
+    background-color: $light-gray;
+    height: $alto;
+    width: $ancho;
+    margin-right: $m-r;
+    line-height: $alto-linea;
+    text-align: $text-a;
+    border-radius: $radio;
+}
+
+@mixin on-top($abs, $trans) {
+    position: $abs;
+    z-index: $trans;
+}
+
+@mixin text-edit($bold,$shadow,$pt) {
+    font-weight:$bold;
+    text-shadow:$shadow;
+    font-family: $pt;
+}

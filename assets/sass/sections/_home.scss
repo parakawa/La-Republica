@@ -92,7 +92,7 @@
 		a{
 			color: black;
 		}
-  		.aweita-item,{
+  		.aweita-item{
   			padding-bottom: 20px;
   			h6{
   			   display: table-cell;
@@ -105,9 +105,9 @@
 	  			display: table-cell;
   				vertical-align: middle;
 	  			
-	  				}
-				}
-		p{
+	  		}
+	   }
+	p{
 			height: 16px;
 			margin: 8px 20px 0px 20px;
 			text-align: center;
@@ -120,8 +120,7 @@
 				padding-bottom: 10px;
 				border-bottom: solid $red 5px;
 			}
-		}
-
+	}
  	}
  	.encuesta{
  		  background: url("../image/trama_square.jpg") repeat left top;
@@ -207,7 +206,7 @@
 		  	font-weight:700;
 		  }
 	}
-}
+
 #slider{
 	padding: 20px 0;	
 
@@ -245,4 +244,106 @@
 		display: block;
 		box-sizing: border-box;
 	}
+
+section.title {
+    .headline {
+        font-size: 43px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 30px;
+        width: 884px;
+        margin: auto;
+        font-size: 50px;
+        font-family: $open-sans;
+    }
 }
+}
+
+
+.portada-noticias {
+            text-align: center;
+            margin-left: 128px;
+            margin-top: 19px;
+            margin-bottom: 18px;
+
+            .fa-facebook{
+                color: $electric-blue;
+
+                @include estilo-social($light-gray, 28px, 28px, 6px, 26px, center, 4px);
+
+                box-shadow: 0px 5px $electric-blue;
+            }
+
+            .fa-twitter{
+                color: $sky-blue;
+                @include estilo-social($light-gray, 28px, 28px, 6px, 26px, center, 4px);
+                box-shadow: 0px 5px $sky-blue;
+            }
+
+            .fa-google-plus{
+                color: $vino;
+                @include estilo-social($light-gray, 28px, 28px, 6px, 26px, center, 4px);
+                box-shadow: 0px 7px $sky-blue;
+                background-color: $light-gray;
+                height: 28px;
+                width: 28px;
+                line-height: 26px;
+                text-align: center;
+                border-radius: 4px;
+                box-shadow: 0px 5px $vino;
+            }
+            .politic {
+                position: relative;
+                font-size: 12px;
+                color: $dark-gray;
+                font-family: $open-sans;
+            }
+        }
+
+        .jne {
+            @include on-top(absolute, 21);
+            margin-top: 288px;
+            color: white;
+            font-size: 38px;
+            font-size: 35px;
+            width: 405px;
+            @include text-edit(bolder,2px 2px $black,$open-sans);
+            margin-left: 28px;
+            line-height: 39px;
+            margin-top: 379px;
+        }
+
+    .martin-belaunde {
+        p {
+            @include on-top(absolute, 21);
+            margin-top: 162px;
+            margin-left: -92px;
+            color: white;
+            font-size: 22px;
+            width: 399px;
+            line-height: 23px;
+            @include text-edit(bolder,2px 2px $black,$open-sans);
+        }
+
+        .portada2 {
+            margin-left: -122px;
+        }
+
+        .final {
+            position: absolute;
+            z-index: 21;
+            margin-top: 180px;
+            color: white;
+            font-size: 22px;
+            text-shadow: 2px 2px $black;
+            font-family: $open-sans;
+        }
+
+        .portada3 {
+            width: 459px;
+            margin-left: -121px;
+            margin-top: 11px;
+            margin-bottom: 58px;
+        }
+    }}

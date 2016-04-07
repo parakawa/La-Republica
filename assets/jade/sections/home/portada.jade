@@ -1,0 +1,27 @@
+include ../../helpers/mixins.jade
+include ../../helpers/mixins-paty.jade
+doctype html
+html(lang='es')
+  head
+  include ../../base/head.jade
+  body
+    section.title
+        h1.headline
+            |Guerra en la municipalidad de 
+            |lima Metropolitana
+    div.container
+        .row.portada-noticias
+            .col-md-12
+              +networks-simply
+              span.twelve Hace 12 minutos
+              img(href="assets/image/bullet.gif")(class="inline bullet")
+              span.politic POLÍTICA
+        .row
+            .col-md-10
+                p.jne JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+                img.portada1(src="assets/image/img_grid_principal.jpg")
+            .col-md-6
+                p Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por s/.3 000 millones  | FOTOS 
+                img.portada2(src="assets/image/img_grid_secundario.jpg")
+                p.final Sub-20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO
+                img.portada3(src="assets/image/img_grid_especiales.jpg")
